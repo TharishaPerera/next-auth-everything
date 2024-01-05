@@ -3,7 +3,8 @@ import { auth, signOut } from "@/auth"
 const SettingsPage = async () => {
     const session = await auth()
   return (
-    <div>{JSON.stringify(session)}
+    <div>
+      <span>{JSON.stringify(session).toString()}</span>
       <form action={async () => {
         "use server"
 
